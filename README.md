@@ -13,7 +13,7 @@ Yiqun Zhao¹˒², Binbin Huang¹˒², Haobin Duan¹˒², Zibo Zhao³, Shenghua G
 
 StructParts reuses a holistic 3D prior to generate detailed, structurally coherent part-decomposed objects from a segmented mesh scaffold.
 
-This repository contains the static project homepage, pipeline and result figures, and a 15-second teaser film.
+This repository contains the static project homepage, pipeline and result figures, and a 24-second teaser film.
 
 ## Preview
 
@@ -23,7 +23,7 @@ python -m http.server 8000
 
 ## Publication
 
-Keep this repository private during preparation. After the arXiv paper is live, update the paper links in `index.html`, make the GitHub repository public, and enable GitHub Pages from `main`, `/ (root)`. The intended URL is https://zhao-yiqun.github.io/structparts/.
+The project homepage is https://zhao-yiqun.github.io/structparts/. GitHub Pages publishes from `main`, `/ (root)`. Update the paper link in `index.html` when the arXiv paper is available.
 
 ## Model dependencies
 
