@@ -27,6 +27,8 @@ The project homepage is https://zhao-yiqun.github.io/structparts/. GitHub Pages 
 
 ## Model dependencies
 
+Our DiT and VAE decoder weights are hosted at [Goatzyq/structparts](https://huggingface.co/Goatzyq/structparts). See [the inference README](https://github.com/zhao-yiqun/structparts-code#setup) for download commands and setup. The model repository is private during preparation; private model downloads require an authorized Hugging Face login.
+
 DINOv2 checkpoints are not distributed with StructParts. Users download DINOv2-large directly from [facebook/dinov2-large](https://huggingface.co/facebook/dinov2-large). The inference release README documents setup. Our model artifacts contain only the diffusion transformer and VAE decoder.
 
 ## Acknowledgments
