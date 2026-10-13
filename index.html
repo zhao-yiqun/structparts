@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StructParts — Seeing Both the Forest and the Trees</title>
+<meta name="description" content="StructParts reuses holistic 3D priors for part-decomposed generation, combining geometric detail within each part with structural coherence across the whole object.">
+<meta property="og:title" content="Seeing Both the Forest and the Trees"><meta property="og:description" content="Reusing Holistic 3D Priors for Part-Decomposed Generation"><meta property="og:image" content="assets/teaser.webp">
+<link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<nav aria-label="Page navigation"><a class="wordmark" href="#">Struct<span>Parts</span><i aria-hidden="true">●</i></a><div><a href="#method">Method</a><a href="#results">Results</a><a href="#editing">Applications</a></div></nav>
+<main>
+<header>
+<p class="eyebrow">HOLISTIC PRIORS · PART-LEVEL GENERATION</p>
+<h1>Seeing Both the Forest<br>and the Trees</h1>
+<p class="subtitle">Reusing Holistic 3D Priors for<br class="mobile-break"> Part-Decomposed Generation</p>
+<div class="authors"><span>Yiqun Zhao<sup>1,2</sup></span><span>Binbin Huang<sup>1,2</sup></span><span>Haobin Duan<sup>1,2</sup></span><span>Zibo Zhao<sup>3</sup></span><span>Shenghua Gao<sup>2,4</sup></span></div>
+<div class="affiliations"><span><sup>1</sup> The University of Hong Kong</span><span><sup>2</sup> Transengram</span><span><sup>3</sup> Tencent Hunyuan</span><span><sup>4</sup> Shenzhen Loop Area Institute</span></div>
+<div class="links"><span class="pill pending">Paper <small>Coming soon</small></span><span class="pill pending">Code <small>Coming soon</small></span></div>
+</header>
+<section class="hero" aria-label="Generated 3D objects">
+<video id="teaser-film" controls autoplay muted loop playsinline preload="metadata" poster="assets/teaser-poster.webp" aria-label="15-second film: white assembled shapes become colored parts, the camera moves through the scene, two rifles and a crab explode in close-up, then the camera returns to the original front view"><source src="assets/teaser-film.mp4" type="video/mp4"></video>
+<p class="caption">One holistic prior. A world of detailed, individually editable parts.</p>
+</section>
+<section class="abstract">
+<p class="eyebrow">THE WHOLE SHAPE. EVERY PART.</p>
+<h2>Detail within parts.<br>Coherence across the whole.</h2>
+<p>Generating 3D assets with explicit parts requires both geometric detail inside each part and structural coherence across the whole object. <strong>StructParts</strong> inherits these properties from a pretrained holistic 3D model through <strong>dual-frame coordinate interleaving</strong>.</p>
+<p>Each shape latent is interpreted in both a part-local and an object-global reference frame. Guided by a segmented mesh scaffold, a global-local interleaved transformer reuses the prior at both scales. Lightweight finetuning enables part-decomposed generation, part-mesh refinement, and part-level editing.</p>
+</section>
+<section id="method" class="figure-section">
+<div class="section-heading"><span class="number">01 / METHOD</span><h2>From a holistic prior to explicit parts</h2></div>
+<figure><a href="assets/pipeline.webp" target="_blank" rel="noopener"><img src="assets/pipeline.webp" alt="StructParts pipeline: image to segmented mesh scaffold, part-local and object-global voxel coordinates, and interleaved diffusion for detailed part meshes" loading="lazy"></a><figcaption>A segmented mesh scaffold anchors the shape tokens. Part-local and object-global coordinate frames guide the same pretrained diffusion model at complementary scales. Dataset-provided ground-truth meshes and segmentations illustrate the part-wise data flow in this diagram.</figcaption></figure>
+</section>
+<section id="results" class="figure-section">
+<div class="section-heading"><span class="number">02 / GENERATION</span><h2>One image, many coherent parts</h2></div>
+<figure><a href="assets/image-to-shape.webp" target="_blank" rel="noopener"><img src="assets/image-to-shape.webp" alt="Image-conditioned generation examples with input images and the resulting part-decomposed 3D objects" loading="lazy"></a><figcaption>Image-conditioned generation across varied object categories. Colors distinguish generated parts.</figcaption></figure>
+<figure class="comparison"><a href="assets/comparison.webp" target="_blank" rel="noopener"><img src="assets/comparison.webp" alt="Qualitative comparisons of part-decomposed generation against baseline methods" loading="lazy"></a><figcaption>Qualitative part-decomposed generation comparisons from the paper.</figcaption></figure>
+</section>
+<section id="editing" class="figure-section">
+<div class="section-heading"><span class="number">03 / APPLICATIONS</span><h2>Parts you can refine and edit</h2></div>
+<div class="applications"><figure><h3>Part-mesh refinement</h3><a href="assets/refinement.webp" target="_blank" rel="noopener"><img src="assets/refinement.webp" alt="Part-mesh refinement results, showing geometry detail restored from a coarse scaffold" loading="lazy"></a><figcaption>Refine individual part geometry while retaining the scaffold's overall structure.</figcaption></figure><figure><h3>Part-level editing</h3><a href="assets/editing.webp" target="_blank" rel="noopener"><img src="assets/editing.webp" alt="Part-level editing examples including modifications of segmented 3D objects" loading="lazy"></a><figcaption>Explicit parts provide an interface for local editing.</figcaption></figure></div>
+</section>
+<section class="citation"><span class="number">CITATION</span><pre><code>@misc{zhao_structparts,
+  title = {Seeing Both the Forest and the Trees:
+           Reusing Holistic 3D Priors for Part-Decomposed Generation},
+  author = {Zhao, Yiqun and Huang, Binbin and Duan, Haobin
+            and Zhao, Zibo and Gao, Shenghua}
+}</code></pre><p>Publication details will be updated when the paper is available.</p></section>
+</main>
+<footer><span>StructParts</span><span>The forest and the trees, in the same frame.</span></footer>
+</body>
+</html>
