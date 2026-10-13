@@ -2,6 +2,8 @@
 
 **Seeing Both the Forest and the Trees: Reusing Holistic 3D Priors for Part-Decomposed Generation**
 
+**NeurIPS 2026**
+
 Yiqun Zhao¹˒², Binbin Huang¹˒², Haobin Duan¹˒², Zibo Zhao³, Shenghua Gao¹˒²˒⁴*
 
 ¹ The University of Hong Kong · ² Transengram
