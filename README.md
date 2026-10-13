@@ -2,10 +2,12 @@
 
 **Seeing Both the Forest and the Trees: Reusing Holistic 3D Priors for Part-Decomposed Generation**
 
-Yiqun Zhao¹˒², Binbin Huang¹˒², Haobin Duan¹˒², Zibo Zhao³, Shenghua Gao²˒⁴
+Yiqun Zhao¹˒², Binbin Huang¹˒², Haobin Duan¹˒², Zibo Zhao³, Shenghua Gao²˒⁴*
 
 ¹ The University of Hong Kong · ² Transengram
-³ Tencent Hunyuan · ⁴ Shenzhen Loop Area Institute
+³ Tencent · ⁴ Shenzhen Loop Area Institute
+
+*Corresponding author: Shenghua Gao.*
 
 StructParts reuses a holistic 3D prior to generate detailed, structurally coherent part-decomposed objects from a segmented mesh scaffold.
 
@@ -24,3 +26,7 @@ Keep this repository private during preparation. After the arXiv paper is live, 
 ## Model dependencies
 
 DINOv2 checkpoints are not distributed with StructParts. Users download DINOv2-large directly from [facebook/dinov2-large](https://huggingface.co/facebook/dinov2-large). The inference release README documents setup. Our model artifacts contain only the diffusion transformer and VAE decoder.
+
+## Acknowledgments
+
+We thank [Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) and [UltraShape-1.0](https://github.com/PKU-YuanGroup/UltraShape-1.0) for their open-source models and implementations, which our work builds upon. Original license and copyright notices are retained in the inference code.
