@@ -30,3 +30,7 @@ DINOv2 checkpoints are not distributed with StructParts. Users download DINOv2-l
 ## Acknowledgments
 
 We thank [Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) and [UltraShape-1.0](https://github.com/PKU-YuanGroup/UltraShape-1.0) for their open-source models and implementations, which our work builds upon. Original license and copyright notices are retained in the inference code.
+
+## Figure sources
+
+The five static method/result figures are exported directly from the PDFs actively referenced by the paper, respecting each PDF’s saved CropBox. `figure-sources.json` records the LaTeX source, PDF SHA-256, crop coordinates, and output hashes. Re-export with `python scripts/site/export_paper_figures.py` in the paper repository, then sync the generated assets.
